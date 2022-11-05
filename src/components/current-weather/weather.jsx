@@ -1,4 +1,9 @@
+import React from 'react';
+
 import "./weather.css"
+
+
+
 
 
 const CurrentWeather =({data})=>{
@@ -10,7 +15,12 @@ const CurrentWeather =({data})=>{
                 <p className="weather-description">{data.weather[0].description}</p>  
                 </span>
                 
-                <img alt="weather" className="weather-icon" src={`/icon/${data.weather[0].icon}.png`}/>
+                <img alt="weather" className="weather-icon" src={`/weatherApp/icon/${data.weather[0].icon}.png`}/> 
+
+                
+                
+             
+              
 
             </div>
 
