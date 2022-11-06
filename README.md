@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# WEATHER APP Project with REACT JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to  a Personal [Weather App Project]
+## Table of contents
 
-## Available Scripts
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-In the project directory, you can run:
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- To check the weather conditions in any city with a population of over a 100,000 population
+- To check weather Forecast for the next 7 days in this cities
+- To check weather conditions on different devices 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="1121" alt="Screen Shot 2022-11-06 at 4 07 37 PM" src="https://user-images.githubusercontent.com/95531716/200195237-85a66c20-8241-440e-b928-1af777b7255b.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Links
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://leoimewore.github.io/weatherApp/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## My process
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Built with
 
-## Learn More
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### What I learned
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Major learnings 
+1)using javascript array methods like map and filter 👍
+2)Implementing ES6 syntax for example: spread and null operator👍
+3)Implementing the useState and useEffect hooks👍
 
-### Code Splitting
+To see how you can add code snippets, see below:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```js
+let arr = [props.role, props.level, ...props.languages, ...props.tools];
+const handleClick = function (event) {
+    const clickedSkill = event.target.textContent;
+    if(!props.inputValue.includes(clickedSkill)){
+    props.setInputValue([...props.inputValue, clickedSkill]);
+}
 
-### Analyzing the Bundle Size
+    const filteredData = props.info.filter((ev) =>
+      [ev.role, ev.level, ...ev.languages, ...ev.tools].includes(clickedSkill)
+    );
+    props.setInfo(filteredData);
+  }
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+My major focus remains completing projects with react js and improve my skill set 
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+https://reactjs.org/     
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+
+
+- Frontend Mentor - [@leoimewore](https://www.frontendmentor.io/profile/leoimewore)
+- Twitter - [@capino48](https://www.twitter.com/capino48)
+
+
+
+## Acknowledgments
+
+Thank you Frontend Mentor
