@@ -52,25 +52,31 @@ https://leoimewore.github.io/weatherApp/
 ### What I learned
 
 Major learnings 
-1)using javascript array methods like map and filter 👍
+1)applying fetch to collect latitude,longitude and city code data from the Rapid API Database 👍
 2)Implementing ES6 syntax for example: spread and null operator👍
 3)Implementing the useState and useEffect hooks👍
 
 To see how you can add code snippets, see below:
 
-```js
-let arr = [props.role, props.level, ...props.languages, ...props.tools];
-const handleClick = function (event) {
-    const clickedSkill = event.target.textContent;
-    if(!props.inputValue.includes(clickedSkill)){
-    props.setInputValue([...props.inputValue, clickedSkill]);
-}
+```const loadOptions=(inputValue)=>{
+        return fetch
+        ( `${GEO_API_URL}/cities?minPopulation=1000&namePrefix=${inputValue}`,geoApiOptions)
+        .then(response => response.json())
+        .then((response )=> {
+            return {
+            options: response.data.map((city)=>{
+                return{
+                    value:`${city.latitude} ${city.longitude}` ,
+                    label: `${city.name}, ${city.countryCode}`
+                }
+            })
 
-    const filteredData = props.info.filter((ev) =>
-      [ev.role, ev.level, ...ev.languages, ...ev.tools].includes(clickedSkill)
-    );
-    props.setInfo(filteredData);
-  }
+        }
+        })
+        .catch(err => console.error(err));
+
+
+    }
 ```
 
 
