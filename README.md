@@ -45,8 +45,8 @@ https://leoimewore.github.io/weatherApp/
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
+- Geolocation Api  https://rapidapi.com/wirefreethought/api/geodb-cities/
+- Open Weather API https://openweathermap.org/api
 - [React](https://reactjs.org/) - JS library
 
 ### What I learned
