@@ -44,7 +44,7 @@ https://leoimewore.github.io/weatherApp/
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- React Accordion
 - Geolocation Api  https://rapidapi.com/wirefreethought/api/geodb-cities/
 - Open Weather API https://openweathermap.org/api
 - [React](https://reactjs.org/) - JS library
@@ -82,7 +82,7 @@ To see how you can add code snippets, see below:
 
 ### Continued development
 
-My major focus remains completing projects with react js and improve my skill set 
+Moving forward i want to improve on making making more api calls and improve my front end tech stack
 
 
 
@@ -99,6 +99,4 @@ https://reactjs.org/
 
 
 
-## Acknowledgments
 
-Thank you Frontend Mentor
